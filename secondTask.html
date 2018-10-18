@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAIN Page</title>
+    <style>
+        h1:hover {
+            background-color: rgb(232, 157, 157);
+        }
+        .inline {
+            display: inline-block;
+        }
+
+		table {
+		    font-size: 40px;
+		    width: 500px;
+		    text-align: center;
+		}
+		.float {
+		    float: left;
+		    width: 500px;
+		}
+		form {
+		    width: 550px;
+		}
+		fieldset {
+		    border: 3px solid darkblue;
+		}
+		legend {
+            border: 3px solid darkblue;
+            color: darkblue;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <a href="https://www.google.com"><h1> GOOGLE </h1></a>
+            <a href="https://www.facebook.com"><h1> FACEBOOK </h1></a>
+            <a href="https://developer.mozilla.org"><h1> MDN </h1></a>
+            <a href="https://validator.w3.org"><h1> VALIDATOR </h1></a>
+            <a href="/secondTask2Page.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8AAADz8/P09PT+/v79/f319fX8/Pz29vb39/f6+vr7+/sEBAT4+Pje3t7o6Ojr6+vY2NgwMDAYGBitra11dXVnZ2cODg4dHR2oqKiKioqUlJTU1NR7e3udnZ1ubm7CwsI2NjbIyMglJSVPT089PT2GhoZYWFgrKyu2traampoUFBRQUE9ZWVlCQkIdHRyzbF4FAAAWwklEQVR4nN1d6WKbvBIVGIwBszhx7HiLl8RpnLS97/92l0UCzUhCEuC0X/2jcVKB5qCRZjsShNQfzxO+ENWX+7cd93bVJ4jrX70gaL7U/+PHzRdf1VZoImtLFG1ZE5u2NmLWnyip/+xFUf1nP4pouySuv8RJ0KNtpG3LbkdYk6ZtwNr265rdt/oks/rPXjir/+zPwvoW8YzeImJfuLa0l1lCcNuYtaUSsdsFrC13O9pW6FrWVuhaFDNGbau7JpP6z950UvcSTKb1lZEb0gtceovZhF45mVBB3BmBbUPWdkrb+qxt3LZNYNuma591HUu67iFmpbMMdyG0/koXt3WnSoCuDUBV24S1Fbue4K5FMSvlDajmto/RHRWg1wrdtBUAKh+GCHDadq0Wk3Y9Szw2jqUgrgBwhq6ctgCZig4ZwVkLEHUdC123z7Zti7pOxGdb3Y5aDX5U/pyKigCVKqoXs+kaXWmg3P+ROcja0l70KjryHJSoqMEcFMVUzkEIUC303zUHTcREz5b28sfMRIfN7FRRYzH98ocX3gegZzIHLcyEEUCkon7pNnrR7C5zcKiKCgB7zMEgrCx+pF1/R56DXa6aybPVidl0HUzL//FoHPIPmomgbkIt/n/EVbNSUdY1u1L1aP4KM2HjqmEx2W//iKvGtZ3xAP/AHHR7AOwjpgd6+XdctUbMyuL7s+8yE9/mqjUqGpcJHS8K/5WIXhQzLDsKIvux/z5XzSaiF8WkFp8J0qEnf4OZUM8klZloulY+mnu5aqOaCdFVE5J/eoD/0TmIAN7ZTHBtv8lM6EawS7m/ew72MhNNW6/u5e4qyqoK9CdJWCXgTq5a0zYo/yOY3RmgX7TIF5fL7WW33b5vt7vN8nRZ5FWXrCTRbw5qVbQq4fhtL3cBmN52vx7WjvhZP6x2yww+jGERvajOlcVnmjO2q1b8dE/btxbRfI6/VJ+33SlncU4fV63DTITT8nbM4o88giS/UHQMjwBw3iJ92+4jadfjBD3DAYpm4nJ8RTDUAOufr0+XmFV4h7lqGoBjqOjiwGmmAcBmKN/TuushEb3FCPYE6C6vTi+A1c/ftwkJzc1E1xwcT0U5gAnJtl9K6XUA6y/P27S+/0hz0Kv/PMYcDGYkO3YMjxnA8nMoTeUwM9GIWVVHmzL/oDnoR+mxS/8MAdY/C4zTIa5aI2bF1Wgs/iAVJdmhW2gbgMXnPVcBNHDVGjHDinLCqDaDAHqf61EBOs7jUgXQIvEwrSpP/ggA9w+OVmjoyRi0vS6kMYF9ZoX91n8OhgcDoavP+vH19fkROanqh7F1scNlENErAA4Zwcuro1O76/HwclmkWe7mWZ7nWbq4vByOV+1oP+zxCNqL2f9KNtrvjhpg+f1pk06ihlc3pbfzo9LipZunpqV8vm7JKCo6wJPJzh0A179ueX1fZUTvB9nt11oJsPBycn9I4gHx2uxV9KZeIp+PJ5ei0GXVosvxEQ9lqwc39Tho56AX1bw2+7GnAHfKUOHHzfUSn2/blbIgfnb7IQdY/HjBAM1nEuS12c/BlQrgISsvssiqTQj1GaQK8UT6zUF/CnlttnPQPcsf+Xo3JXza0Lz44m4VfsPvWWQQ0YtiVjxUCa/NDGD2LA3X57tq9vVK/E59dydfs17rfE5Pj9L2ynq000cpwEOFr1/xpVqQ3INUM2qI3wOwvnIhXfbeUir0kOJLyrJXYG6v055BDzcqgwHOl4SNypDiy4zc5pLV2UmJ1RwcNoKpbK6s2FwZXnzJVxJvbp1G9iqKeG2mczCTzcFlFLC2IxRflpzhYHP8NbcTk7S8NlszIVlFr2msErpX8YWkZwSw+PIxI3YqynhttrP3LAJ8moQjF0D94AkDLOyiHcAY8tqMAUo8mU0w6VGj12W2N6I//kSEtl3JP57XNsgXPRGT+qB9AfTEZmCL9NOzAAhYUQOiia9FC7AfnRJ13YZWlzUC6DiXewPMBICPqe8Kc3CkGj1Jv4TJmN8JIFt/zxjgOgvcHnPQtPiSrSWrjQ2dp/pVrIAoH827MIJZPKRGry++FLYXrTY7YjGCQc1rM15/LziA+0oDUUUbgAkTegBPhizWEGAxFQNjgJTXxvb56dOGQlZt0TEHE5KnWTdAk+JLvIcA585DZAqw5rXFLMWvV+4DBtiYCdFV8+PluWjxsCkCbSS0LU/mBAAWX7bdYrZ0HsRr02e2McCN2g76OYuBqDc5hE65wQv4wpArwZcQTWoTOHX/FDRtsYoGk7dGtz5yFUBjnswRPdtrB2FBZLuYAiQvCOB1onbVog3X9iEfuvOlTAnxXTubaHyAfoazRGmoUtHYJY9821c3EvYjWRVAowx27Ty6owMMIlwfXMZqVy1xYdv/6RNJmuLLkr8dW2xMAHr1n/UWdJYigKuo8U4kvSxA23mlqMN4MiuUVcjNAEJeW9f6S3AJO6NN5L1k8JHXEAfxZPI5XG0ORqxPyGvrWn+FidAknRSumpDIKWbOsJ0vG7TQ5aF+BJOwqnLHeoAzAlkWzhsDqIrod0IQ+ZEmg3gy5A3cznnytQDDadmEVbm7AWYQoMPyospwqczloGF/qJeb3jyZFMmQawEy11YOECr3O1w4DhSgOqsW4pWpNP0uGcSTOcDb7UQxAcAZcGl0VK41ADhnqfuucCmbI4BFJOIOojS7vPPmOM+zzhG0AlhlL/HT0xZfUgywVNRkyCa5Hcyh3oz2UssB4lD5CmRdl0NoENGnYlaXzsV+PJkog7d7IwYAvfrPGidvAQfjk5hl1eIFBjgvHDgtQHXyj+zg7RahTkU9zGtTjMoBLv1TTVat6YVkCOC8DqZMXTUEMCITcDvnnSgANvtXKlvvswOI1GoHcxcHi6xaigGWkYbXn055AArh6ABWp7c0vDa1D9QkZmtdzboeBk5ZtHOxEe0jw9x58xp9Cp/XnsjMRLsDCfDaOhKOKwDwh1WNniwwQLpS9aQ0/3T42x2MNujoAEb5Mw+wWKOtii9RigCyqL8XnTJaguf14QdqFWViagGGFwDw2VV7vPKsWooBVlF/Tzpl/gWe1z60BCjbAVp5bK3xPnrWxZdUrOV8ZGEfgEXbFVhOd00erbeKFhf85kVzTonxHGyETtu52KQhMsWz1dUHTzzAclFQAKRdM15bVxySA9HWbARtii/RAgGcs6jfnsqVrIFz6gKA4j5OzGuTuekn8Ox/EWOAHE8GRT5cBs6eyvUDmJ+LHCBTyoQ/vUXlxW5BWFETBe2LL4WiCuRFN7IwEw1flMX69VDuuuYg5LUp3fTfQLnyuq19jT7DRZ3CgaN7R6y4aiwlRnX1h1RFGSSe16aOQ0BQNpe3NSi+kD1ebcQMnEmVb0rgXYh+LzWTSBEqp2BilzzInjyZIBVWmyrqt6bUHdsRLD5pMzuE/DQPsCOSXIIYb2NnJqDQZXiHYuLCgbOmcm0kC0PHXmodQH8L1D61U1GUkwGmv/7JZeBM67QwWt2AtmLyz6MSKUPl4AeQaCK2tTl2bAHWwerzYEzlYs/WBWvWEQJ0EcCa1zbryOaQD16ia2SyiqoLoAmNNPgQqIr6bch4yZlfs66kS0UDcHqLPOE45yU6xkN5MukcASzsYm5H5YpW/KL8JXHV2qUC8NrkoXIGHvkhsDcTKGWRYoB1Bs4coOsdwKI8SZRmAvLaFKEyT5Vl+wKG8WSYxebu+4EzcN356RceoLOYYhVFRxF7SGjkA11AYuSCAfbgycgycM8wA6dJ3154gM7FQwAFa6YASHs5AZ1KEcBeZ1loM3C6/PQCGMQLBSgm/xhVtRNga/ArQVJDgJriizQD5xsznaBZPVGAqswK/U1Z1fgEkyYbSKdk4ZIkA3eeiEfZKKI66MTfpF1DXpuYzWlTxsClWecD6ZRNCCTJwH0qAIpOVNbywOaVI9kBEPPahMcYv/OCPLp+H09G8jDEDBxN75pw1WpKJpuMn1IVpV1jXpsYKjdpqOrHaz4dBpCL6NM1ADivK54mTKdJ9swBLGJgwVVT8tpkofKBf9KvWSO0CqB5AfSEM3DGVK7JKwfQ2QXq5B84vUURKr/zy95zrgNofuxYukYAizE0ApjUFfTGXmwjwUzgpUIJsOzlnV8MHnMdQOMavZhDnZsCJDl/9gYt10qjOg3AuheeU1GupVKA9ifEVokpANB58bRmgoqZr3mLv7EDKMQhLyB/lMlHxZonI8mCX5OJ2QgiNn0d5HckHiBAMekPeTppb1dNo6LOOdPWabnUEZ9ZORGZmWi69hQAm4zqDQiyuNMc5OoYBlw1lrWr73LpXGTimtemPhkvugBBLv4IR/9J5uCzDcDoxAN09l0qCnltslwAIhm+RPJRMXLVfOUcfLABOIs+eYDFzFEDDKW8NhgqA5Ih5UKNraJWAEPkZznudKKagzMprw3zZPh6Q53Y6rHzpRPgqwCwK/lX3BekhL98faWd/qZIV73yK/M1gKNifULs0EWmFDM+cwCdq2cGUJ1R/QUM4oQMc9VkZsJKRaMqX8qljqha9QDIkv5tgEgN4h+dg2XbBUjxbKwASjYpJ0sg0WaImchEM/HVNQcViYcNyICcEEBszXxeIlmoHMGK0ZOv36RsMQftzAS97xFkQHLSNYLsrWSsF2k9n5fImQfjumrWKkpqgRqADgFmAo8gPb2lUTtpL1eQu8sQQOMTYoeuog3AFAD81TmClNfmM4DyUHkLilk3eds+rppoBw1U1Is2PMAiOuzKjU25KreaTnkCov0i5I+4as1S4cFy34Xok38MoDJ312pFcdN19OfMRCnmdLLmATpcbkwDsKOX30C0C+nhqplEExpXjYpJqaDsdj9DLVWVXammcmFem9+mLJgg3+CqNWIiXptvCLCTTrnnRWsIaeY7X8YyE9VS4X7xAJ29DmBt8cNuSvPsGdiLmvxgPgfFMwr6mYl6HG4cwLnz4WsAMl4bdtWQDwQ2xtV0wEFm4rGHq8Zm0k+QhTrwYsoAgreSqXMBF1BeKI3+97tqMqoqVdKOGlFd5aaHaHfwZJLWXpT/HixesjfiHKzaPsHbATFVbGolr629Mj7wAMu8wagRvRHAui2k0uCDMZWUuqqXLkqztwAAiyX6u101Zs12kN+Ydi4yLgCoOU/mCpZoupvgeyJ6wnmUbhs2ld/ejOq0il6Qci/5sJruXftGV40l4GG+obBbBirqGQEs9x/yUWfJrr67mQixijYeMr3da9h51DpdX2pemz4f946X0+911aq28RO83Y7oVVTBaxPXX7bntRE61b25ZfY4rpkojPce3s7JptoRjMFbyTp5Ms12fIr0jXQDrOLmASMoSf75aC/3IdDOwQjx2jp5MoDBx2L9jq09DuatW4VLkvx0sIQAnUxrJuDRGFqezBHOqznYnCWMSoYBDnHVSqGTHAFUl1Dk77TSU7nwboJVZ1CGifkD52ChdisIkKbETPLTOoDM2pIDEnpJlCoaTDPYdpCrVgFcAoBsO3mfERRGpdl+kq0d+BhTHwoNdr589V5kpGXMDAF8nsoBiokHr5bIhE6JiKtz5xxQoXXnyQxz1coRpOWmdqFbqsWEAPFbybpr9A+gl3m1vUTZy8+RXLUSYGWreIC/u8TkAUaA16alU+6xm7KRzUH6GGfsrC9RRW1ctSrx8IIA1kxegxGEvDaDE2LF89p85QbJmJ7X9hKY00gUddqTg5RnZwgQv5VMy5MJcvwiLkpBFsJqRs9KMyIwnSxV1KssDwB4js0AQtKQEU/Gh9yTYkS/Ut1j7AWQp1OmawSwys7Y1GlVAKXFF3hOzbwscY4GUK6imfCKrJ0MYEfyD/6mHfszBFieX9rrIPEugLzQmTCCbyZi9lLR+kreeat/Pi7icVWUz0+nwgjOFQf4qQBCXpsBT8ajRDc+bbM3BWhWfOEXGWEEy7XNZgM4PL3FiE6Jz4gpv5zMANq6aqKZqPYlGbhqSl6bWY1+hQGWpt8fNAelrho29OWXg90cpLy2QAVQpdxXDNBxjs1DG2kOFr7oUQT4Zknnkb+VTF+jd//nIICld60BaF58odHEWQT4kFipKPMoEUCDsY/SRwSw/LLsBGgZ0eN4sPry6lotMlMtQHXqnqQiwCLqz22Ooe5S0SBfSQAWzoXNOGBmouXOl4UIsPi5IUMAsrahj5JO9EtqSamTj6AxT2bhCLvP5uw9M4NUlMT7NxnALwlAkzpt1dLgrWRC8YUsHjHAejl3ifb4ty4zQTKU2WZz0E5Fm/WN8tr60CmjZn8VkmhHs2C95qCLii/sy4dskTEQE76VzHbni3uVAXSad1rZR/Tubi4H+BZaroW06xl8K5n9CbErIbPNKjcpiabWNfonx5EDfLKzZq2YqreSGdTo6ybURxWXPcf5uTQ4QJUBLGR1bz8d2fNS+aI2h0mjK21OiJ14JwXAMjZencLScdLSKSNvclrxRCCTaMKY9ckA2tMp6WPMrlKA9c/1jw09RkitoiTd/IBkPHi737J40MBVQwCtlBtF9NL3kDrt57hZuAmt4JGYbVArN9/E7mJz5OaeDKA0ZWHO+mxG0MSTUTIBTh8qgM2X86p+l2yWZhO3fJfs/vR5OJ655yADSN8lO2BzAMFvJbM4zJ97jH7yrgHYfNZfz6/PX9z7gEXPj7/LNjIDGCrFZG8ls5mDbfGFa7s/8zKqpBc/HQDLF53JR8VmJuG3kqkAGpwQ+yK8DaZreFQPg/MbHo2LL+o5GMC3kvU9SLxuG+XvGqHtAG5dRddWYlZNGK+t/0HihE6EymceZwSflBXePmKqRqXDTKhmetas/YMAPlEj2iuiF2tE+kcj5zTKekn8bCu+RswO4PMuo/tyLEdQtVTUv1n4QLrH6C5/O83HCmD579ttRtREoD5iUl7b4DnYACw/+4M9wOrznhKi5qr1Wioqi+/PLNZfk8Rv8T+Xp1d+JA0AfhwuSOghZqKp0wJeWy8zoczJRPv3N2OAb9t9rOvaykyA01uYxR9HRTl3wifuaceq+VKA1efn7pJTr6rfs+0QU/5Wsj5moiMn4y1uL6uHtSN+1ufVy60yfFO9A93PmvG8tl6umtmBOdXPfH+63Dafu+37+/Zzc7rs05wlbIcePaUVU3HlkDkoO+qBvnSYMGMnRv9jzUHDERw0B42KLzrmtVFuzEBMxZVqH2hEEgICOIbyiGJ6dS9DXLXePBnUdRelDnZt4Kop3ko2SEWteTKgbc85qBUTVrnvBXCQig5IPJRtwekto5sJJU9mnBc+m3iU9ektAbpyZDOhPnLj7maiERNfOaqZEOmUdiM4hkcJrxzHVbuXmeglpryXkeagjCcjmIn7uGoagPebg3c3E3gOUl7bt7lq5m+NGCH5V/VUmQtMU/47XbVeiQf4VrL/mKumYF4DMcME8tr+ZlfNJKIXxUS8tr/KVUNd97RmXI10bFety0x81xzU89rGAfjHXDUM8M6umklEb7LI9MhP4yv/QlfNoPjS0ba6q4TXdncz0cvZtlgqaNcefivZv+KqNWJCXtvfYSbGTMAr3kp2j50vhgBHNhO+ktc2AOA3mgmlq6YgDf0Nrlqv4otezPpKlmIPWJEkmrKdpawkG04ZD3UmtGWe/DRmt6MqytrGQttQ0pbQtonQlvFFxa5FMVHX9ZVJQhkZbENrzL5EIY08Ivr2sM62AWtCe2Ftg7ZtLLRFtwvErkPjrkmCxax/i9lZURG9px/RCwL2JabnZXkRbhu0bWmTmFYkO9o2t2NdewZd9xLTb//lvnj0mCT+C2pi01bWxLO4nU1bQUzv/zS6RP/ku2+3AAAAAElFTkSuQmC" width="100" height="100"></a>
+    </header>
+    <main>
+        <h3>Some Lorem Ipsum Text</h3>
+        <p>Lorem ipsum dolor sit amet, nec noster luptatum consulatu eu, ut mei impetus corpora. 
+            An pro dicam everti prodesset. Antiopam necessitatibus no has. Quo ex suas intellegat. 
+            Mea timeam pericula in, no vis doctus verear.
+        </p>
+        <h3>Next is ordered and unordered lists</h3>
+        <div>
+            <div class="inline">
+                <ol>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                    <li>item 5</li>
+                </ol>
+            </div>
+            <div class="inline">
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                    <li>item 5</li>
+                </ul>
+            </div>
+            <div class="inline">
+                <ol>
+                    <li>item 1</li>
+                    <li>item 2
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                        </ul>
+                    </li>
+                    <li>item 3</li>
+                </ol>
+            </div>
+        </div>
+        <h3>Again some of Lorem Ipsum</h3>
+        <p>ullam elit quam, vestibulum vitae tortor quis, vehicula mollis tortor. 
+            Pellentesque interdum non lacus ut volutpat. Fusce eget nisl sit amet risus dictum maximus. 
+            Integer rhoncus dolor urna, in tincidunt tellus commodo a. Sed porta eu turpis sit amet viverra. 
+            Curabitur feugiat vestibulum metus pellentesque ultricies. Donec maximus mollis ornare. 
+            Mauris tincidunt augue quam, a lacinia tellus suscipit non. 
+            Curabitur vulputate erat ligula, id pharetra risus vestibulum a. 
+            Donec dapibus mi sed lectus viverra rutrum. Sed et ipsum id ante semper aliquet id at nisi. 
+            Praesent sed est varius, sodales tortor id, vestibulum ante. 
+            Sed nec elit tristique, condimentum lorem ac, porttitor leo.
+        </p>
+        <h2>And... TABLES</h2>
+        <div>
+            <div class="inline">
+                <table border="4">
+                    <thead>
+                        <tr>
+                            <th colspan="5"> Header Cell </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3"> data </td>
+                            <td rowspan="2"> data </td>
+                            <td rowspan="4"> data </td>
+                        </tr>
+                        <tr>
+                            <td> data </td>
+                            <td> data </td>
+                            <td> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> data </td>
+                            <td colspan="2"> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"> data </td>
+                            <td colspan="2"> data </td>
+                        </tr>
+                    </tbody>    
+                </table>
+            </div>
+            <div class="inline">
+                <table border="4">
+                    <thead>
+                        <tr>
+                            <th colspan="3"> Header Cell </th>
+                            <th colspan="2"> Header Cell </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2"> data </td>
+                            <td colspan="2"> data </td>
+                            <td rowspan="2"> data </td>
+                            <td> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> data </td>
+                            <td rowspan="4"> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="3"> data </td>
+                            <td colspan="2"> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="2"> data </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h2>And... FORM!</h2>
+        
+        <!--<form action="https://formspree.io/your@email.com" method="POST">-->
+        
+        <!--відправка данних форми на мейл-->
+        
+        <form action="https://www.google.com.ua/">
+            <fieldset>
+                <legend>My Form</legend>
+                <div>
+                    <label>Name:
+                        <input type="text" name="first-name" placeholder="Your name" required/>
+                    </label>
+                    <label>Company:
+                        <input type="text" name="company" placeholder="Your Company" required/>
+                    </label>
+                        <br>
+                    <label>Email:
+                        <input type="email" name="email" placeholder="Your email" required/>
+                    </label>
+                    <label>Password:
+                        <input type="password" name="password" placeholder="8 chars minimum" minlength="8" required/>
+                    </label>
+                </div>
+                    <hr>
+                    <br>
+                <div>
+                    <label>Preferred car:
+                        <select>
+                            <option value="volkswagen">Volkswagen</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="TA3">ТАЗ</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Citroen">Citroen</option>
+                            <option value="Запор">Запор</option>
+                        </select>
+                    </label>
+                        <br>
+                    <label>Gender:</label>
+                    <label>
+                        <input type="radio" name="gender"/>male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender"/>female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender"/>other
+                    </label>
+                </div>
+                    <hr>
+                    <br>
+                <label class="sports">Your sports interests: </label>
+                <div>
+                    <input type="checkbox" name="football"/>football
+                    <input type="checkbox" name="basketball"/>basketball
+                    <input type="checkbox" name="tennis"/>tennis
+                    <br>
+                    <input type="checkbox" name="volleyball"/>volleyball
+                    <input type="checkbox" name="swimming"/>swimming
+                    <input type="checkbox" name="boxing"/>boxing
+                </div>
+                    <br>
+                <input type="submit" name="submit"/>        <input type="reset">
+            </fieldset>
+        </form>
+    </main>
+    <br>
+    <footer>
+        <a href="https//www.facebook.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png" alt="facebook" width="100" height="100"></a>
+        <a href="https://www.google.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2000px-Google_%22G%22_Logo.svg.png" alt="googel" width="100" height="100"></a>
+        <a href="https://developer.mozilla.org"><img src="https://developer.mozilla.org/static/img/opengraph-logo.72382e605ce3.png" alt="mdn" width="100" height="100"></a>
+    </footer>
+</body>
+</html>
