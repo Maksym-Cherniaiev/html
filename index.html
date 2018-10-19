@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAIN Page</title>
+    <style>
+        h1:hover {
+            background-color: rgb(232, 157, 157);
+        }
+        .inline {
+            display: inline-block;
+        }
+
+		table {
+		    font-size: 40px;
+		    width: 500px;
+		    text-align: center;
+		}
+		.float {
+		    float: left;
+		    width: 500px;
+		}
+		form {
+		    width: 550px;
+		}
+		fieldset {
+		    border: 3px solid darkblue;
+		}
+		legend {
+            border: 3px solid darkblue;
+            color: darkblue;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <a href="https://www.google.com"><h1> GOOGLE </h1></a>
+            <a href="https://www.facebook.com"><h1> FACEBOOK </h1></a>
+            <a href="https://developer.mozilla.org"><h1> MDN </h1></a>
+            <a href="https://validator.w3.org"><h1> VALIDATOR </h1></a>
+            <a href="/secondTask2Page.html"><img src="http://pluspng.com/img-png/logo-next-png-previous-page-to-top-of-page-next-page-225.png" alt="next page" width="100" height="100"></a>
+    <main>
+        <h3>Some Lorem Ipsum Text</h3>
+        <p>Lorem ipsum dolor sit amet, nec noster luptatum consulatu eu, ut mei impetus corpora. 
+            An pro dicam everti prodesset. Antiopam necessitatibus no has. Quo ex suas intellegat. 
+            Mea timeam pericula in, no vis doctus verear.
+        </p>
+        <h3>Next is ordered and unordered lists</h3>
+        <div>
+            <div class="inline">
+                <ol>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                    <li>item 5</li>
+                </ol>
+            </div>
+            <div class="inline">
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                    <li>item 5</li>
+                </ul>
+            </div>
+            <div class="inline">
+                <ol>
+                    <li>item 1</li>
+                    <li>item 2
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                        </ul>
+                    </li>
+                    <li>item 3</li>
+                </ol>
+            </div>
+        </div>
+        <h3>Again some of Lorem Ipsum</h3>
+        <p>ullam elit quam, vestibulum vitae tortor quis, vehicula mollis tortor. 
+            Pellentesque interdum non lacus ut volutpat. Fusce eget nisl sit amet risus dictum maximus. 
+            Integer rhoncus dolor urna, in tincidunt tellus commodo a. Sed porta eu turpis sit amet viverra. 
+            Curabitur feugiat vestibulum metus pellentesque ultricies. Donec maximus mollis ornare. 
+            Mauris tincidunt augue quam, a lacinia tellus suscipit non. 
+            Curabitur vulputate erat ligula, id pharetra risus vestibulum a. 
+            Donec dapibus mi sed lectus viverra rutrum. Sed et ipsum id ante semper aliquet id at nisi. 
+            Praesent sed est varius, sodales tortor id, vestibulum ante. 
+            Sed nec elit tristique, condimentum lorem ac, porttitor leo.
+        </p>
+        <h2>And... TABLES</h2>
+        <div>
+            <div class="inline">
+                <table border="4">
+                    <thead>
+                        <tr>
+                            <th colspan="5"> Header Cell </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3"> data </td>
+                            <td rowspan="2"> data </td>
+                            <td rowspan="4"> data </td>
+                        </tr>
+                        <tr>
+                            <td> data </td>
+                            <td> data </td>
+                            <td> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> data </td>
+                            <td colspan="2"> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"> data </td>
+                            <td colspan="2"> data </td>
+                        </tr>
+                    </tbody>    
+                </table>
+            </div>
+            <div class="inline">
+                <table border="4">
+                    <thead>
+                        <tr>
+                            <th colspan="3"> Header Cell </th>
+                            <th colspan="2"> Header Cell </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2"> data </td>
+                            <td colspan="2"> data </td>
+                            <td rowspan="2"> data </td>
+                            <td> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> data </td>
+                            <td rowspan="4"> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="3"> data </td>
+                            <td colspan="2"> data </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="2"> data </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h2>And... FORM!</h2>
+        
+        <!--<form action="https://formspree.io/your@email.com" method="POST">-->
+        
+        <!--відправка данних форми на мейл-->
+        
+        <form action="https://www.google.com.ua/">
+            <fieldset>
+                <legend>My Form</legend>
+                <div>
+                    <label>Name:
+                        <input type="text" name="first-name" placeholder="Your name" required/>
+                    </label>
+                    <label>Company:
+                        <input type="text" name="company" placeholder="Your Company" required/>
+                    </label>
+                <br>
+                    <label>Email:
+                        <input type="email" name="email" placeholder="Your email" required/>
+                    </label>
+                    <label>Password:
+                        <input type="password" name="password" placeholder="8 chars minimum" minlength="8" required/>
+                    </label>
+                </div>
+                <hr>
+                <br>
+                <div>
+                    <label>Preferred car:
+                        <select>
+                            <option value="volkswagen">Volkswagen</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="TA3">ТАЗ</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Citroen">Citroen</option>
+                            <option value="Запор">Запор</option>
+                        </select>
+                    </label>
+                <br>
+                    <label>Gender:</label>
+                    <label>
+                        <input type="radio" name="gender"/>male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender"/>female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender"/>other
+                    </label>
+                </div>
+                    <hr>
+                    <br>
+                <label class="sports">Your sports interests: </label>
+                <div>
+                    <input type="checkbox" name="football"/>football
+                    <input type="checkbox" name="basketball"/>basketball
+                    <input type="checkbox" name="tennis"/>tennis
+                <br>
+                    <input type="checkbox" name="volleyball"/>volleyball
+                    <input type="checkbox" name="swimming"/>swimming
+                    <input type="checkbox" name="boxing"/>boxing
+                </div>
+                <br>
+                <input type="submit" name="submit"/>        <input type="reset">
+            </fieldset>
+        </form>
+    </main>
+    <br>
+    <footer>
+        <a href="https//www.facebook.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png" alt="facebook" width="100" height="100"></a>
+        <a href="https://www.google.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2000px-Google_%22G%22_Logo.svg.png" alt="googel" width="100" height="100"></a>
+        <a href="https://developer.mozilla.org"><img src="https://developer.mozilla.org/static/img/opengraph-logo.72382e605ce3.png" alt="mdn" width="100" height="100"></a>
+    </footer>
+</body>
+</html>
